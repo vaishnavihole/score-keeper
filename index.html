@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>  Basketball Score Keeper </title>
+     <link rel="stylesheet" href="./css/style.css">
+     <script>
+         function incA(){
+             var Score=parseInt(document.getElementById("btnScoreA").innerHTML);
+           Score++;
+           document.getElementById("btnScoreA").innerHTML=Score;
+        }
+
+         function incB(){
+            var Score=parseInt(document.getElementById("btnScoreB").innerHTML);
+           Score++;
+           document.getElementById("btnScoreB").innerHTML=Score
+            
+            }
+
+        function decA(){
+            var Score=parseInt(document.getElementById("btnScoreA").innerHTML);
+           Score--;
+           document.getElementById("btnScoreA").innerHTML=Score;
+         }
+         
+         function decB(){
+            var Score=parseInt(document.getElementById("btnScoreB").innerHTML);
+           Score--;
+           document.getElementById("btnScoreB").innerHTML=Score;
+             
+            }
+     </script>
+     
+    </head>
+    <body>
+        
+        <h1 class="app-title">🏀Basketball Score Board🏀 </h1>
+        <div class="container">
+
+            <div class="container-card">
+                <h2 class="team-title"> Team A🌻</h2>
+
+                <button id="btnIncA" class="btnScore" onClick="incA();"> + </button>
+
+                <h3 id="btnScoreA" class="txtScore"> 0 </h3>
+
+                <button id="btnDecA" class="btnScore" onClick="decA();" > - </button>
+            </div>
+
+            <div class="container-card">
+                <h2 class="team-title"> Team B🌼</h2>
+
+                <button id="btnIncB" class="btnScore" onClick="incB();"> + </button>
+
+                <h3 id="btnScoreB" class="txtScore"> 0 </h3>
+
+                <button id="btnDecB" class="btnScore" onClick="decB();"> - </button>
+               
+       
+             
+        </div>
+        
+
+    </body>
